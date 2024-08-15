@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/** @format */
+
+import './App.css';
+import UseCallback from './hooks/UseCallback';
+import UseContext from './hooks/UseContext';
+import UseEffect from './hooks/UseEffect';
+import UseImperativeHandle from './hooks/UseImperativeHandle';
+import UseLayoutEffect from './hooks/UseLayoutEffect';
+import UseMemo from './hooks/UseMemo';
+import UseReducer from './hooks/UseReducer';
+import UseRef from './hooks/UseRef';
+import UseRef2 from './hooks/UseRef2';
+import UseState from './hooks/UseState';
+import UseId from './hooks/UseId';
+import CustomHook from './custom-hooks/CustomHook';
+import UseDebugValue from './hooks/UseDebugValue';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+	return (
+		<div>
+			{/* <UseState /> */}
+			{/* <UseReducer /> */}
+			{/* <UseEffect /> */}
+			{/* <UseLayoutEffect /> */}
+			{/* <UseContext /> */}
+			{/* <UseRef /> */}
+			{/* <UseRef2 /> */}
+			{/* <UseImperativeHandle /> */}
+			{/* <UseMemo /> */}
+			{/* <UseCallback /> */}
+			{/* <UseId/> */}
+			<CustomHook />
+			{/* <UseDebugValue /> */}
+		</div>
+	);
 }
 
-export default App
+export default App;
